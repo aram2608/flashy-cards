@@ -8,12 +8,4 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/thirdparty/SQLiteCpp)
-
-add_executable(flashy_cards src/app/main.cpp)
-target_link_libraries(flashy_cards
-  SQLiteCpp
-  sqlite3
-  pthread
-  dl
-)
+add_subdirectory(src)

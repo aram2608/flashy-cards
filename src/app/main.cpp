@@ -1,7 +1,9 @@
-#include <iostream>
-#include <SQLiteCpp/SQLiteCpp.h>
+#include "../flib/db/db.hpp"
 
 int main() {
-    std::cout << "Hello world " << SQLite::VERSION << std::endl;
+    DB db{};
+
+    db.manage();
+
     return 0;
 }
